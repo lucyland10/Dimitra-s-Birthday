@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<title>Πρόσκληση Δήμητρας</title>
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  background-image: url("background3.png"); /* η εικόνα σου */
+  background-size: cover;                  /* να καλύπτει όλη την οθόνη */
+  background-position: center;             /* κεντραρισμένη */
+  background-repeat: no-repeat;
+  background-attachment: fixed;            /* 🔒 ΣΤΑΘΕΡΟ background */
+
+  text-align: center;
+  font-family: 'Comic Sans MS', sans-serif;
+  overflow-x: hidden;
+}
+  h1 {
+    margin-top: 50px;
+    color: #faf882;
+  }
+  .balloon {
+    position: absolute;
+    width: 60px;
+    animation: float 6s infinite;
+  }
+  .balloon1 {
+    position: absolute;
+    width: 60px;
+    animation: float 8s infinite;
+  }
+  .balloon2 {
+    position: absolute;
+    width: 60px;
+    animation: float 4s infinite;
+  }
+   @keyframes float {
+    0% { transform: translateY(100vh); }
+    100% { transform: translateY(-200px); }
+  }
+  .bing {
+    width: 300px;
+    display: block;
+    margin: 50px auto;
+  }
+  @keyframes bounce {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-20px); }
+  }
+  .rsvp {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h1>Η Δήμητρα γίνεται 3 <br>
+  και σε προσκαλεί να γιορτάσετε μαζί!</h1>
+
+<img src="bing.gif" class="bing" alt="Bing Κουνελάκι">
+
+<!-- Μπαλόνια -->
+<img src="red_balloon.png" class="balloon1" style="left:10%;">
+<img src="purple_ballon.png" class="balloon" style="left:30%;">
+<img src="blue_balloon.png" class="balloon1" style="left:60%;">
+<img src="purple_ballon.png" class="balloon2" style="left:80%;">
+<img src="green_balloon.png" class="balloon2" style="left:20%;">
+<img src="red_balloon.png" class="balloon" style="left:50%;">
+<img src="green_balloon.png" class="balloon" style="left:70%;">
+
+<p>Σε περιμένω την <b>Κυριακή 8 Μαρτίου</b><br>
+και ώρα <b> 6:00 μ.μ.</b><br>
+στο <b>Volta,</b> στο Fashion City Outlet!</p>
+
+<button class="rsvp" onclick="window.location.href='sms:?body=Θα παρευρεθώ στα γενέθλια της Δήμητρας!'">
+Ενημέρωσε μας εδώ!
+</button>
+
+<audio autoplay loop>
+  <source src="melody.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
